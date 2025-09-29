@@ -242,35 +242,6 @@ const Student = () => {
               </div>
             )}
           </div>
-
-          {/* Chat/Participants Panel - Right Side */}
-          <div className="lg:col-span-1">
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
-              <div className="flex border-b border-gray-200 mb-4">
-                <button className="px-4 py-2 text-sm font-medium text-purple-600 border-b-2 border-purple-600">
-                  Chat
-                </button>
-                <button className="px-4 py-2 text-sm font-medium text-gray-500 ml-4">Participants</button>
-              </div>
-
-              <div className="space-y-4 mb-4">
-                <div className="text-sm">
-                  <div className="font-medium text-black">User1</div>
-                  <div className="bg-gray-800 text-white px-3 py-2 rounded-lg mt-1">Hey there, how can I help?</div>
-                </div>
-
-                <div className="text-sm text-right">
-                  <div className="font-medium text-black">User2</div>
-                  <div
-                    className="text-white px-3 py-2 rounded-lg mt-1 inline-block"
-                    style={{ backgroundColor: "#7B60DA" }}
-                  >
-                    Nothing bro, just chill!!
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
