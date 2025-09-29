@@ -33,7 +33,7 @@ const Home = () => {
             >
               <h3 className="font-semibold text-black text-xl mb-3">I'm a Student</h3>
               <p className="text-gray-500 text-base">
-                Lorem ipsum is simply dummy text of the printing and typesetting industry
+                Start your learning process
               </p>
             </div>
 
