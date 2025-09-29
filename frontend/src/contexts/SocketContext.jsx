@@ -20,7 +20,7 @@ export const SocketProvider = ({ children }) => {
   const [reconnectAttempts, setReconnectAttempts] = useState(0)
 
   useEffect(() => {
-    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000"
+    const backendUrl = window.location.origin
     const newSocket = io(backendUrl, {
       reconnection: true,
       reconnectionDelay: 1000,
