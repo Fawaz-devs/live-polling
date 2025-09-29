@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+
+  .btn-secondary {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply btn bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-500;
+  }
+
+  .btn-success {
+    @apply btn bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+  }
+
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+
+  .card {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+
+  .input {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+
+  .poll-option {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply w-full p-4 text-left border-2 border-gray-200 rounded-lg hover:border-blue-500 hover:bg-blue-50 transition-colors duration-200;
+  }
+
+  .poll-option.selected {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply border-blue-500 bg-blue-50;
+  }
+
+  .poll-option:disabled {
+    /* replaced design tokens with basic Tailwind classes */
+    @apply opacity-50 cursor-not-allowed hover:border-gray-200 hover:bg-white;
+  }
+
+  .brand-badge {
+    @apply inline-block px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full;
+  }
+}
